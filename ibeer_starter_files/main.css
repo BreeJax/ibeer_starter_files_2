@@ -29,15 +29,10 @@ img{
 }
 .wrapper{
     width: 1000px;
-
-
-
-    /*
-        TODO:
-        - Center up the page
-        - Create a flexbox containerer for
-        the major page sections
-    */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 #site-header{
   display: flex;
@@ -64,24 +59,19 @@ img{
 #site-header div h1{
     top: 20px;
 }
+@font-face {
+  font-family: 'Dancing Script';
+}
 #site-header div h3{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
-    /*
-        TODO:
-        - Use the script font: 'Dancing Script' fot this text
-    */
+    font-family: Dancing Script
 }
 #main-navigation{
     background: #444;
     display: flex;
     flex-direction: row;
-
-    /*
-        TODO:
-        - Use Flexbox to arrange the navigation links
-    */
 }
 #main-navigation a{
     display: block;
@@ -160,6 +150,11 @@ article time{
     color: #666;
 }
 article img{
+  float: right;
+
+  width: 250px;
+  height: 150px;
+
     /*
         TODO:
         - Float article images to the right
