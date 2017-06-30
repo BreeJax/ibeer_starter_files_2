@@ -18,7 +18,6 @@ body{
     line-height: 1.8;
     margin: 0;
     background-color: #EFE6b4;
-    width: 1000px;
     margin: 0 auto;
 }
 h1, h2, h3{
@@ -33,9 +32,10 @@ img{
 }
 .wrapper{
     margin: 0 auto;
+    width: 1000px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #site-header{
   display: flex;
@@ -93,14 +93,13 @@ main{
     display: flex;
     flex-basis: auto;
     flex-direction: column;
-
     width: 50%;
-    margin: 0 auto;
 }
 aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 25%;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -158,6 +157,7 @@ body > div > main > article > p {
 #site-footer{
     color: white;
     background: #333;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
