@@ -11,11 +11,15 @@ COLORS:
 light tan: #eeebda
 
 */
+
+
 body{
     font-family: 'Noto Serif', serif;
     line-height: 1.8;
     margin: 0;
-    background-color: #eeebda;
+    background-color: #EFE6b4;
+    width: 1000px;
+    margin: 0 auto;
 }
 h1, h2, h3{
     font-family: "Josefin Sans", sans-serif;
@@ -28,7 +32,6 @@ img{
     display: block;
 }
 .wrapper{
-    width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -37,10 +40,6 @@ img{
 #site-header{
   display: flex;
   flex-direction: column;
-    /*
-        TODO
-        - Flexbox property here
-    */
 }
 #site-header div{
     text-align: center;
@@ -66,7 +65,7 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
-    font-family: Dancing Script
+    font-family: Dancing Script;
 }
 #main-navigation{
     background: #444;
@@ -81,30 +80,22 @@ img{
     padding: 10px 20px;
     display: flex;
     flex-direction: row;
-
-    /*
-        TODO:
-        - Flexbox - Create general spacing between nav links
-    */
 }
 #main-navigation #logo{
     margin-right: 400px;
-
-    /*
-        TODO:
-        - Flexbox - The logo needs to take up more space
-        that the other links
-    */
+    display: flex;
+    flex-grow: 5;
 }
 main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    /*
-        TODO:
-        - Flexbox: Set the starting width of this element
-        - Use relative positioning to bump this upward
-    */
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+
+    width: 50%;
+    margin: 0 auto;
 }
 aside{
     padding: 20px;
@@ -151,28 +142,22 @@ article time{
 }
 article img{
   float: right;
-
   width: 250px;
   height: 150px;
-
-    /*
-        TODO:
-        - Float article images to the right
-        and match sizes and spacing to the mockup
-    */
 }
 article footer p{
-    /*
-        TODO:
-        - Style the article footer
-        HINT: Look to the article header;
-    */
+  font-size: 0.8em;
+  text-align: center;
+  display: block;
+  color: #666;
+}
+
+body > div > main > article > p {
+  border-bottom: 1px solid #ccc;
 }
 #site-footer{
-
+    color: white;
     background: #333;
-    /*
-        TODO:
-        - Style the site footer
-    */
+    display: flex;
+    justify-content: space-around;
 }
